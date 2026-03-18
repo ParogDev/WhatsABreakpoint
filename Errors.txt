@@ -1,0 +1,32 @@
+Build failed:
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(39, 69)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(42, 69)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(45, 68)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(48, 70)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(51, 68)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(54, 68)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(57, 72)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpointSettings.cs(60, 66)] CS1503: Argument 1: cannot convert from 'System.Drawing.Color'
+to 'uint'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(74, 50)] CS0023: Operator '?' cannot be applied to operand of type
+'SubStatsComponentOffsets'
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(76, 65)] CS1061: 'SubStatsComponentOffsets' does not contain a definition for
+'StatDictionary' and no accessible extension method 'StatDictionary' accepting a first argument of type 'SubStatsComponentOffsets' could be found (are you missing a using directive or an
+assembly reference?)
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(79, 73)] CS0103: The name 'GameStat' does not exist in the current context
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(82, 70)] CS0103: The name 'GameStat' does not exist in the current context
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(170, 22)] CS1061: 'Graphics' does not contain a definition for 'DrawFilledRect'
+and no accessible extension method 'DrawFilledRect' accepting a first argument of type 'Graphics' could be found (are you missing a using directive or an assembly reference?)
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(205, 22)] CS1061: 'Graphics' does not contain a definition for 'DrawFilledRect'
+and no accessible extension method 'DrawFilledRect' accepting a first argument of type 'Graphics' could be found (are you missing a using directive or an assembly reference?)
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(209, 22)] CS1061: 'Graphics' does not contain a definition for 'DrawFilledRect'
+and no accessible extension method 'DrawFilledRect' accepting a first argument of type 'Graphics' could be found (are you missing a using directive or an assembly reference?)
+[2026-03-09 2:37:10 AM, C:\Users\Parog\Documents\halp1\Plugins\Source\WhatsABreakpoint\WhatsABreakpoint.cs(215, 26)] CS1061: 'Graphics' does not contain a definition for 'DrawFilledRect'
+and no accessible extension method 'DrawFilledRect' accepting a first argument of type 'Graphics' could be found (are you missing a using directive or an assembly reference?)
