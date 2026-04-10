@@ -16,7 +16,7 @@ namespace WhatsABreakpoint
 
         public override bool Initialise()
         {
-            Name = "What's a Breakpoint";
+            Name = "Whats A Breakpoint";
             _statsCache = new TimeCache<KineticFusilladeStats>(ReadPlayerStats, 500);
             return true;
         }
