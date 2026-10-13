@@ -12,8 +12,8 @@ namespace WhatsABreakpoint
     {
         public override void OnClose()
         {
-            HudLog.Flush();
-            base.OnClose();
+            try { HudLog.Flush(); }
+            finally { base.OnClose(); }
         }
 
         private TimeCache<KineticFusilladeStats> _statsCache;
