@@ -10,6 +10,12 @@ namespace WhatsABreakpoint
 {
     public class WhatsABreakpoint : BaseSettingsPlugin<WhatsABreakpointSettings>
     {
+        public override void OnClose()
+        {
+            HudLog.Flush();
+            base.OnClose();
+        }
+
         private TimeCache<KineticFusilladeStats> _statsCache;
         private readonly Stopwatch _animationTimer = Stopwatch.StartNew();
         private const float TOLERANCE = 0.05f; // 5% tolerance for "perfect" timing
@@ -45,7 +51,7 @@ namespace WhatsABreakpoint
             }
             catch (Exception ex)
             {
-                LogError($"Error in Render: {ex.Message}");
+                HudLog.Fault($"Error in Render: {ex.GetType().Name}: {ex.Message}", "render");
             }
         }
 
@@ -106,7 +112,7 @@ namespace WhatsABreakpoint
             }
             catch (Exception ex)
             {
-                LogError($"Error reading player stats: {ex.Message}");
+                HudLog.Fault($"Error reading player stats: {ex.GetType().Name}: {ex.Message}", "stats");
                 return null;
             }
 
