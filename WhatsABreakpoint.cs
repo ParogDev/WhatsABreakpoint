@@ -20,6 +20,9 @@ namespace WhatsABreakpoint
         private readonly Stopwatch _animationTimer = Stopwatch.StartNew();
         private const float TOLERANCE = 0.05f; // 5% tolerance for "perfect" timing
 
+        // ImGui 1.93 draws frames inside their rect by default; StrokeLegacy keeps the 1.90 centred stroke.
+        private const int LegacyStroke = (int)Hexa.NET.ImGui.ImDrawFlags.StrokeLegacy;
+
         public override bool Initialise()
         {
             Name = "Whats A Breakpoint";
@@ -175,7 +178,7 @@ namespace WhatsABreakpoint
             // Background box
             var bgRect = new RectangleF(x - 10, y - 10, barWidth + 20, barHeight + 120);
             Graphics.DrawBox(bgRect, Settings.Colors.BackgroundColor);
-            Graphics.DrawFrame(bgRect, Settings.Colors.TextColor, 2);
+            Graphics.DrawFrame(bgRect, Settings.Colors.TextColor, 0f, 2, LegacyStroke);
 
             // Title
             var titlePos = new Vector2(x + barWidth / 2 - 100, y);
@@ -224,7 +227,7 @@ namespace WhatsABreakpoint
 
             // Draw border
             var borderRect = new RectangleF(x, y, width, height);
-            Graphics.DrawFrame(borderRect, Settings.Colors.TextColor, 2);
+            Graphics.DrawFrame(borderRect, Settings.Colors.TextColor, 0f, 2, LegacyStroke);
 
             // Draw zone labels
             using (Graphics.SetTextScale(0.8f * Settings.VisualScale))
